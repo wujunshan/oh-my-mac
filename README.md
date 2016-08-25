@@ -17,6 +17,7 @@
 * [fish](https://fishshell.com/)
 * [fisherman](http://fisherman.sh/)
 * [iTerm2](https://www.iterm2.com/)
+* [LaunchRocket](https://github.com/jimbojsb/launchrocket)
 
 
 ## 普通用户(software.sh)

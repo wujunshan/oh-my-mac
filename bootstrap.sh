@@ -21,6 +21,7 @@ git config --global push.default simple
 brew tap caskroom/cask
 brew tap homebrew/services
 brew cask install iterm2
+brew cask install launchrocket
 
 # Oh My Zsh
 if [ ! -d $ZSH ]; then
