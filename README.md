@@ -53,6 +53,7 @@
 * wget
 * [wireshark](https://www.wireshark.org/): 网络封包分析工具
 * [Pow](http://pow.cx/)
+* [heroku-toolbelt](https://www.heroku.com)
 
 
 ## Ruby On Rails(ruby.sh)
