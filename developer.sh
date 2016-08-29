@@ -23,6 +23,8 @@ brew cask install sequel-pro
 brew cask install dbeaver-enterprise
 brew cask install wireshark
 
+brew install graphviz
+
 brew install heroku
 heroku help
 
