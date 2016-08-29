@@ -24,7 +24,7 @@ brew cask install dbeaver-enterprise
 brew cask install wireshark
 
 brew install heroku
-heroku --version
+heroku help
 
 # pow
 curl -v get.pow.cx | sh
