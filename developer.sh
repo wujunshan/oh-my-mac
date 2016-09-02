@@ -7,6 +7,10 @@ brew cask install google-chrome
 brew cask install docker
 brew cask install vagrant virtualbox virtualbox-extension-pack
 brew cask install atom
+# http://blog.csdn.net/qianghaohao/article/details/52331432
+echo 'registry=https://registry.npm.taobao.org/' >> ~/.atom/.apmrc
+echo 'strict-ssl=false' >> ~/.atom/.apmrc
+
 brew cask install wechat-web-devtools
 brew install hub
 brew install tig
