@@ -36,6 +36,7 @@
 
 ## 开发者(developer.sh)
 
+* [ssh-copy-id]
 * [Mou](http://25.io/mou/)
 * [Sublime Text](https://www.sublimetext.com/3)
 * [KeePassX](https://www.keepassx.org)
