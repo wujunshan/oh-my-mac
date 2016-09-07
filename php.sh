@@ -8,7 +8,7 @@ brew tap homebrew/versions
 brew tap homebrew/php
 
 # PHP
-brew install php56
+brew install php56 php56-redis php56-mcrypt
 
 # Composer
 brew install composer
