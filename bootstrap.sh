@@ -19,9 +19,7 @@ git config --global push.default simple
 # Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew tap caskroom/cask
-brew tap homebrew/services
 brew cask install iterm2
-brew cask install launchrocket
 
 # Oh My Zsh
 if [ ! -d $ZSH ]; then

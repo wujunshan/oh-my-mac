@@ -1,5 +1,7 @@
 #!/bin/bash
 
+brew cask install launchrocket
+
 brew install nginx
 brew install mysql
 brew install postgresql
