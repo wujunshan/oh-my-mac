@@ -56,6 +56,9 @@
 * [Pow](http://pow.cx/)
 * [heroku-toolbelt](https://www.heroku.com)
 * [Graphviz](http://graphviz.org/)
+* [Gimp](https://www.gimp.org/)
+* [LICEcap](http://www.cockos.com/licecap/)
+* [Gitter](https://gitter.im/)
 
 
 ## Ruby On Rails(ruby.sh)

@@ -30,6 +30,10 @@ brew cask install dbeaver-enterprise
 brew cask install wireshark
 
 brew install graphviz
+brew cask install gimp
+brew cask install licecap
+brew cask install gitter
+
 
 brew install heroku
 heroku help
