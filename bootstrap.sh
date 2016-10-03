@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Sierra
+sudo spctl --master-disable
+
 # initialize
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 ZSH=~/.oh-my-zsh
