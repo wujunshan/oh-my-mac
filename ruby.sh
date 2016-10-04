@@ -1,46 +1,34 @@
 #!/bin/bash
 
+# initialize
+RUBY_VERSION=2.3.1
+GEM_SOURCES_CHINA=https://gems.ruby-china.org/
+GEM_SOURCES_ORIGIN=https://rubygems.org/
+export RUBY_BUILD_MIRROR_URL=http://oeijhg095.bkt.clouddn.com
+export RUBY_CONFIGURE_OPTS="--disable-install-doc  --with-readline-dir=/usr/local/opt/readline"
+
 # Rbenv: https://github.com/rbenv/ruby-build/wiki
 brew install openssl libyaml libffi readline
 brew install rbenv && eval "$(rbenv init -)"
 
-# initialize
-RUBY_VERSION=2.3.1
-GEM_SOURCES=https://gems.ruby-china.org/
-CHECK_RUBY_INSTALLED=$(rbenv versions | grep $RUBY_VERSION | wc -l)
-CHECK_GEM_SOURCES=$(gem sources | grep $GEM_SOURCES | wc -l)
-export RUBY_BUILD_MIRROR_URL="https://ruby.taobao.org/mirrors/ruby/ruby-${RUBY_VERSION}.tar.bz2#"
-export RUBY_CONFIGURE_OPTS="--disable-install-doc  --with-readline-dir=$(brew --prefix readline)"
-
 # Ruby
-if [ ! $CHECK_RUBY_INSTALLED -ge 1 ]; then
-  rbenv install ${RUBY_VERSION}
-fi
-rbenv global ${RUBY_VERSION}
-rbenv shell ${RUBY_VERSION}
+rbenv install -kvs $RUBY_VERSION
+rbenv global $RUBY_VERSION
+rbenv shell $RUBY_VERSION
+rbenv rehash
+
 
 # Gem
-if [ ! $CHECK_GEM_SOURCES -ge 1 ]; then
-  gem sources --add $GEM_SOURCES --remove https://rubygems.org/
-  echo 'gem: --no-document' | tee -a ~/.gemrc
-fi
+gem sources --add $GEM_SOURCES_CHINA --remove $GEM_SOURCES_ORIGIN -v
+echo 'gem: --no-document' | tee -a ~/.gemrc
 
 # bundler
 gem install bundler
-bundle config mirror.https://rubygems.org https://gems.ruby-china.org
+bundle config mirror.${GEM_SOURCES_ORIGIN%/} ${GEM_SOURCES_CHINA%/}
 
 # framework
 gem install rails
 gem install sinatra
-
-# tools
-gem install pry
-gem install pry-rails
-gem install awesome_print
-gem install rest-client
-gem install foreman
-gem install powder
-
 
 # profile for fish
 echo '# rbenv' | tee -a ~/.config/fish/config.fish ~/.zshrc ~/.bashrc
