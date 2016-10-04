@@ -27,6 +27,7 @@ brew cask install charles
 brew cask install sequel-pro
 brew cask install dbeaver-enterprise
 brew cask install wireshark
+brew cask install vagrant-manager
 
 brew install graphviz
 brew cask install gimp

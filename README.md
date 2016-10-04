@@ -49,6 +49,7 @@ chsh -s /bin/zsh
 * [KeePassX](https://www.keepassx.org)
 * [Google Chrome](https://www.google.com/chrome/)
 * [Vagrant](https://www.vagrantup.com/)
+* [vagrant-manager](http://vagrantmanager.com/)
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 * [Github Atom](https://atom.io/)
 * [quick-look-plugins](https://github.com/sindresorhus/quick-look-plugins)
