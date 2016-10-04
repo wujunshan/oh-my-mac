@@ -1,8 +1,7 @@
 #!/bin/bash
 
-
 brew install ssh-copy-id
-brew cask install mou
+brew cask install macdown
 brew cask install sublime-text
 brew cask install keepassx
 brew cask install google-chrome

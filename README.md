@@ -1,7 +1,5 @@
 # Mac 安装手册
 
-
-
 * [Command Line Tools](http://adcdownload.apple.com/Developer_Tools/Command_Line_Tools_OS_X_10.11_for_Xcode_7.3.1/Command_Line_Tools_OS_X_10.11_for_Xcode_7.3.1.dmg)
 
 ## 基础组件(bootstrap.sh)
@@ -12,12 +10,11 @@
 
 * [Homebrew](http://brew.sh/)
 * [Homebrew Cask](https://caskroom.github.io/)
-* [Homebrew Services](https://github.com/Homebrew/homebrew-services)
 * [oh-my-zsh](http://ohmyz.sh/)
 * [fish](https://fishshell.com/)
 * [fisherman](http://fisherman.sh/)
 * [iTerm2](https://www.iterm2.com/)
-* [LaunchRocket](https://github.com/jimbojsb/launchrocket)
+
 
 
 ## 普通用户(software.sh)
@@ -37,7 +34,7 @@
 ## 开发者(developer.sh)
 
 * [ssh-copy-id]
-* [Mou](http://25.io/mou/)
+* [MacDown](http://macdown.uranusjr.com/)
 * [Sublime Text](https://www.sublimetext.com/3)
 * [KeePassX](https://www.keepassx.org)
 * [Google Chrome](https://www.google.com/chrome/)
@@ -109,10 +106,9 @@
 
 
 
-
-
 ## 相关服务
 
+* [LaunchRocket](https://github.com/jimbojsb/launchrocket)
 * [Nginx](http://nginx.org/)
 * [MySQL](https://www.mysql.com/)
 * [PostgreSQL](https://www.postgresql.org/)
