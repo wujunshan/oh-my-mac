@@ -1,7 +1,6 @@
 #!/bin/bash
 
 brew cask install qq
-brew cask install electronic-wechat
 brew cask install thunder
 brew cask install aliwangwang
 brew cask install neteasemusic
@@ -11,3 +10,4 @@ brew cask install the-unarchiver
 brew cask install squirrel
 brew cask install libreoffice
 brew cask install splayerx
+brew cask install electronic-wechat
