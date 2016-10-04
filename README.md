@@ -67,6 +67,7 @@ chsh -s /bin/zsh
 * [Gimp](https://www.gimp.org/)
 * [LICEcap](http://www.cockos.com/licecap/)
 * [Gitter](https://gitter.im/)
+* [insomnia](https://insomnia.rest/)
 
 
 ## Ruby On Rails(ruby.sh)
