@@ -15,7 +15,17 @@
 * [fisherman](http://fisherman.sh/)
 * [iTerm2](https://www.iterm2.com/)
 
+切换为 fish
 
+```bash
+chsh -s /usr/local/bin/fish
+```
+
+切换为 zsh
+
+```bash
+chsh -s /bin/zsh
+```
 
 ## 普通用户(software.sh)
 
