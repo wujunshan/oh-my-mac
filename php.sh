@@ -3,8 +3,8 @@
 # requirement
 COMPOSER_PATH=~/.composer/vendor/bin
 
-brew tap homebrew/dupes
-brew tap homebrew/versions
+# brew tap homebrew/dupes
+# brew tap homebrew/versions
 brew tap homebrew/php
 
 # PHP
@@ -21,6 +21,6 @@ composer global require "laravel/installer"
 composer global require "laravel/lumen-installer"
 
 # profile for fish
-echo "# PHP CLI & FPM" | tee -a ~/.config/fish/config.fish ~/.zshrc ~/.bashrc
+echo "# PHP CLI & FPM" | tee -a ~/.config/fish/config.fish ~/.zshrc ~/.bash_profile
 echo "set PATH /usr/local/sbin \$PATH $(brew --prefix homebrew/php/php56)/bin $COMPOSER_PATH " | tee -a ~/.config/fish/config.fish
-echo "export PATH=\"/usr/local/sbin:\$PATH:$(brew --prefix homebrew/php/php56)/bin:$COMPOSER_PATH\"" | tee -a ~/.zshrc ~/.bashrc
+echo "export PATH=\"/usr/local/sbin:\$PATH:$(brew --prefix homebrew/php/php56)/bin:$COMPOSER_PATH\"" | tee -a ~/.zshrc ~/.bash_profile

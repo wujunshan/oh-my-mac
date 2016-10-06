@@ -42,14 +42,8 @@ if [ ! -f $FISHERMAN ]; then
 fi
 
 # profile
-echo "# Homebrew Bottles" | tee -a ~/.config/fish/config.fish ~/.zshrc ~/.bashrc
+echo "# Homebrew Bottles" | tee -a ~/.config/fish/config.fish ~/.zshrc ~/.bash_profile
 echo "set -gx HOMEBREW_BOTTLE_DOMAIN $HOMEBREW_BOTTLE_DOMAIN" | tee -a ~/.config/fish/config.fish
-echo "export HOMEBREW_BOTTLE_DOMAIN=\"$HOMEBREW_BOTTLE_DOMAIN\"" |  tee -a ~/.zshrc ~/.bashrc
-
+echo "export HOMEBREW_BOTTLE_DOMAIN=\"$HOMEBREW_BOTTLE_DOMAIN\"" |  tee -a ~/.zshrc ~/.bash_profile
 
 # https://segmentfault.com/a/1190000004413842
-cat >> ~/.bash_profile << EOF
-if [ -f ~/.bashrc ]; then
-   source ~/.bashrc
-fi
-EOF

@@ -31,6 +31,6 @@ gem install rails
 gem install sinatra
 
 # profile for fish
-echo '# rbenv' | tee -a ~/.config/fish/config.fish ~/.zshrc ~/.bashrc
+echo '# rbenv' | tee -a ~/.config/fish/config.fish ~/.zshrc ~/.bash_profile
 echo 'status --is-interactive; and . (rbenv init -|psub)' | tee -a ~/.config/fish/config.fish
-echo 'eval "$(rbenv init -)"' | tee -a ~/.zshrc ~/.bashrc
+echo 'eval "$(rbenv init -)"' | tee -a ~/.zshrc ~/.bash_profile

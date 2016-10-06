@@ -12,7 +12,7 @@ brew install pyenv-virtualenv && eval "$(pyenv virtualenv-init -)"
 brew install pyenv-which-ext
 
 # Python
-pyenv install $PYTHON_VERSION
+pyenv install -kvs $PYTHON_VERSION
 pyenv global $PYTHON_VERSION
 pyenv shell $PYTHON_VERSION
 pyenv rehash
@@ -36,8 +36,8 @@ pip install --upgrade pip
 pip install django
 
 # profile for fish
-echo '# pyenv' | tee -a ~/.config/fish/config.fish ~/.zshrc ~/.bashrc
+echo '# pyenv' | tee -a ~/.config/fish/config.fish ~/.zshrc ~/.bash_profile
 echo 'status --is-interactive; and . (pyenv init -|psub)' | tee -a ~/.config/fish/config.fish
 echo 'status --is-interactive; and . (pyenv virtualenv-init -|psub)' | tee -a ~/.config/fish/config.fish
-echo 'eval "$(pyenv init -)"' | tee -a ~/.zshrc ~/.bashrc
-echo 'eval "$(pyenv virtualenv-init -)"' | tee -a ~/.zshrc ~/.bashrc
+echo 'eval "$(pyenv init -)"' | tee -a ~/.zshrc ~/.bash_profile
+echo 'eval "$(pyenv virtualenv-init -)"' | tee -a ~/.zshrc ~/.bash_profile
