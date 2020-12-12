@@ -20,7 +20,7 @@ git config --global user.email ${email}
 git config --global push.default simple
 
 # Homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew tap caskroom/cask
 brew cask install iterm2
 
